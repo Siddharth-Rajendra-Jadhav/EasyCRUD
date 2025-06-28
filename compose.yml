@@ -24,4 +24,4 @@ frontend:
     depends_on:
       - backend
 volumes:
-     mariadb_data:
+    mariadb_data:
