@@ -15,4 +15,4 @@ EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar"]
 
-CMD ["student-registrationnn-backend-0.0.1-SNAPSHOT.jar"]
+CMD ["student-registration-backend-0.0.1-SNAPSHOT.jar"]
