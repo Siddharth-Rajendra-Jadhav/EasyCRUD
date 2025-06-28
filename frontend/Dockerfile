@@ -4,7 +4,8 @@ COPY . /opt/
 
 WORKDIR /opt
 # copy .env file- paste public ip in url
-RUN npn install && npn run build
+RUN npn install
+RUN npn run build
 
 RUN apk update && apk add apache2
 
