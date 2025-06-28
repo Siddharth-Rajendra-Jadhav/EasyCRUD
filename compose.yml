@@ -1,6 +1,6 @@
 version: "3.8"
 services: 
-    image: mariadb:latest
+    image: "mariadb:latest"
     ports:
       -"3306:3306"
     environment:
