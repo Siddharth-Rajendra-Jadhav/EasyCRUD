@@ -3,10 +3,10 @@ FROM node:24-alpine
 COPY . /opt/
 
 WORKDIR /opt
-
+# copy .env file- paste public ip in url
 RUN npn install && \
-    npn run build &&\
-    apk update && apk add apache2 &&\
+    npn run build && \
+    apk update && apk add apache2 && \
     rm -rf /var/www/localhost/htdocs/* && \
     cp -rf dist/* /var/www/localhost/htdocs/
 
